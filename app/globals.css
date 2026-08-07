@@ -95,11 +95,7 @@ body { font-family: var(--font-body); background: var(--white); color: var(--bla
   .hero-mobile-only .badge { margin-bottom: 12px !important; }
 }
 @media (max-width: 768px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } .section { padding: 64px 0; } .container { padding: 0 16px; } }
-@media (max-width: 900px) { .hero-desktop-only { display: none !important; } .hero-mobile-only { display: block; } }
-@media (min-width: 901px) and (max-width: 1300px) {
-  .hero-row { flex-direction: column; }
-  .hero-text-col { max-width: 100% !important; }
-}
+@media (max-width: 1300px) { .hero-desktop-only { display: none !important; } .hero-mobile-only { display: block; } }
 .hero-text-col > * { animation: fadeInUp 0.8s cubic-bezier(0.22,1,0.36,1) backwards; }
 .hero-text-col > *:nth-child(1) { animation-delay: 0.05s; }
 .hero-text-col > *:nth-child(2) { animation-delay: 0.15s; }
